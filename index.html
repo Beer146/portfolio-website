@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhir Naik - DevOps Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">Abhir Naik</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">DevOps Engineer</h1>
+                <h2 class="hero-subtitle">Cloud Cost Optimization & Infrastructure Automation</h2>
+                <p class="hero-description">
+                    Building intelligent automation tools to optimize AWS costs and streamline cloud operations.
+                    Passionate about turning complex infrastructure challenges into elegant solutions.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="https://github.com/Beer146" target="_blank" class="btn btn-secondary">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>
+                    I'm a DevOps engineer with a focus on AWS cloud optimization and automation. 
+                    Currently pursuing my degree while building practical tools that solve real-world infrastructure challenges.
+                </p>
+                <p>
+                    My approach combines data analysis with cloud engineering to identify cost savings, 
+                    automate repetitive tasks, and improve infrastructure reliability. I believe in 
+                    infrastructure-as-code, continuous improvement, and making systems observable.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                
+                <!-- Project 1: Zombie Resource Hunter -->
+                <div class="project-card">
+                    <div class="project-icon">🧟</div>
+                    <h3>Zombie Resource Hunter</h3>
+                    <p class="project-description">
+                        Automated AWS cost optimization tool that identifies unused resources across EC2, EBS, RDS, and ELB. 
+                        Successfully identified real cost savings in production environments.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">AWS</span>
+                        <span class="tag">boto3</span>
+                        <span class="tag">CloudWatch</span>
+                    </div>
+                    <div class="project-stats">
+                        <div class="stat">
+                            <i class="fas fa-dollar-sign"></i>
+                            <span>Cost Savings</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-clock"></i>
+                            <span>Automated Weekly Scans</span>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Beer146/zombie-resource-hunter" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2: Right-Sizing Engine -->
+                <div class="project-card">
+                    <div class="project-icon">📊</div>
+                    <h3>Right-Sizing Recommendation Engine</h3>
+                    <p class="project-description">
+                        Intelligent resource analyzer that examines 30 days of CloudWatch metrics to recommend 
+                        cheaper instance types and Reserved Instance purchases based on actual usage patterns.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">AWS</span>
+                        <span class="tag">Pandas</span>
+                        <span class="tag">Data Analysis</span>
+                    </div>
+                    <div class="project-stats">
+                        <div class="stat">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Usage Analytics</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Smart Recommendations</span>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Beer146/rightsizing-engine" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3: Coming Soon -->
+                <div class="project-card coming-soon">
+                    <div class="project-icon">✅</div>
+                    <h3>Compliance-as-Code Validator</h3>
+                    <p class="project-description">
+                        Automated compliance checking tool for SOC2, HIPAA, and PCI requirements. 
+                        Scans AWS infrastructure and provides actionable remediation steps.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Coming Soon</span>
+                    </div>
+                </div>
+
+                <!-- Project 4: Coming Soon -->
+                <div class="project-card coming-soon">
+                    <div class="project-icon">📝</div>
+                    <h3>Postmortem Generator</h3>
+                    <p class="project-description">
+                        Automated incident documentation tool that aggregates logs, metrics, and communication 
+                        to generate comprehensive postmortem reports.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Coming Soon</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
+                    <ul>
+                        <li>AWS (EC2, RDS, ELB, CloudWatch)</li>
+                        <li>Infrastructure as Code</li>
+                        <li>CI/CD (GitHub Actions)</li>
+                        <li>Cost Optimization</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Programming</h3>
+                    <ul>
+                        <li>Python (boto3, pandas)</li>
+                        <li>Data Analysis & Visualization</li>
+                        <li>Scripting & Automation</li>
+                        <li>Git & Version Control</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Technologies</h3>
+                    <ul>
+                        <li>CloudWatch Metrics</li>
+                        <li>YAML/JSON</li>
+                        <li>Linux/Bash</li>
+                        <li>API Integration</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p>Interested in discussing DevOps, cloud optimization, or potential opportunities?</p>
+                <div class="contact-links">
+                    <a href="https://github.com/Beer146" target="_blank" class="contact-link">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/abhirnaik/" target="_blank" class="contact-link">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="abhirnaik2005@gmail.com" class="contact-link">
+                        <i class="fas fa-envelope"></i> Email
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Abhir Naik.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
