@@ -461,8 +461,14 @@ section {
     }
     
     .hero-image img {
-        width: 250px;
-        height: 250px;
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: 65% 30%; /* Adjust these percentages to center your face */
+        border: 5px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        animation: fadeInUp 0.8s ease 0.4s backwards;
     }
     
     .projects-grid {
