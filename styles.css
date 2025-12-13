@@ -363,6 +363,52 @@ section {
     font-weight: bold;
 }
 
+/* Certificates Section */
+.certificates {
+    background: var(--light-bg);
+}
+
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.certificate-category {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.certificate-category h3 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.certificate-category ul {
+    list-style: none;
+}
+
+.certificate-category li {
+    padding: 0.5rem 0;
+    color: var(--text-light);
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.certificate-category li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--success-color);
+    font-weight: bold;
+}
+
 /* Contact Section */
 .contact {
     background: var(--dark-bg);
@@ -465,7 +511,7 @@ section {
         height: 350px;
         border-radius: 50%;
         object-fit: cover;
-        object-position: 65% 30%; /* Adjust these percentages to center your face */
+        object-position: 65% 30%;
         border: 5px solid rgba(255, 255, 255, 0.2);
         box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
         animation: fadeInUp 0.8s ease 0.4s backwards;
@@ -485,56 +531,7 @@ section {
         justify-content: center;
     }
 
-    /* Certificates Section */
-    .certificates {
-        background: var(--light-bg);
-    }
-
     .certificates-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 2rem;
-    }
-
-    .certificate-category {
-        background: white;
-        padding: 2rem;
-        border-radius: 12px;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-    }
-
-    .certificate-category h3 {
-        color: var(--primary-color);
-        margin-bottom: 1.5rem;
-        font-size: 1.3rem;
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-    }
-
-    .certificate-category ul {
-        list-style: none;
-    }
-
-    .certificate-category li {
-        padding: 0.5rem 0;
-        color: var(--text-light);
-        position: relative;
-        padding-left: 1.5rem;
-    }
-
-    .certificate-category li::before {
-        content: '✓';
-        position: absolute;
-        left: 0;
-        color: var(--success-color);
-        font-weight: bold;
-    }
-
-    /* Responsive for Certificates */
-    @media (max-width: 768px) {
-        .certificates-grid {
-            grid-template-columns: 1fr;
-        }
+        grid-template-columns: 1fr;
     }
 }
