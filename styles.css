@@ -390,6 +390,17 @@ section {
     gap: 0.5rem;
 }
 
+.certificate-title-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.certificate-title-link:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
 .certificate-category ul {
     list-style: none;
 }
