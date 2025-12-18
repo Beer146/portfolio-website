@@ -68,254 +68,215 @@
         </div>
     </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="projects">
-            <div class="container">
-                <h2 class="section-title">Featured Project</h2>
-                <div class="projects-grid">
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Project</h2>
+            
+            <!-- CloudSense Platform - Hero Section -->
+            <div class="hero-project">
+                <div class="hero-header">
+                    <div class="hero-icon">☁️</div>
+                    <div class="hero-title-section">
+                        <h2>CloudSense Platform</h2>
+                        <p class="hero-subtitle">Enterprise AWS Cost Intelligence & Optimization Suite</p>
+                    </div>
+                    <div class="hero-badge">🚀 Active Development</div>
+                </div>
+                
+                <div class="hero-content">
+                    <p class="hero-description">
+                        Full-stack AWS cost optimization platform that consolidates four intelligent services into one unified application. 
+                        Built in 13+ hours with FastAPI backend, React TypeScript frontend, SQLAlchemy database, and scikit-learn ML models. 
+                        Features real-time AWS integration across multiple regions, executive dashboards with health scores, and ML-powered 
+                        predictive analytics to prevent cloud waste before it happens.
+                    </p>
                     
-                    <!-- CloudSense Platform - Main Card -->
-                    <div class="project-card featured">
-                        <div class="project-icon">☁️</div>
-                        <div class="featured-badge">Featured</div>
-                        <h3>CloudSense Platform</h3>
-                        <p class="project-description">
-                            Enterprise-grade AWS cost intelligence platform combining automated resource scanning, 
-                            machine learning predictions, and security compliance validation. Full-stack application 
-                            built in 13+ hours featuring real-time AWS integration, executive dashboards, and ML-powered 
-                            waste detection. Built with FastAPI, React TypeScript, SQLAlchemy, and scikit-learn.
-                        </p>
-                        <div class="project-features">
-                            <div class="feature">
-                                <i class="fas fa-robot"></i>
-                                <span>ML-Powered Predictions</span>
-                            </div>
-                            <div class="feature">
-                                <i class="fas fa-layer-group"></i>
-                                <span>4 Integrated Services</span>
-                            </div>
-                            <div class="feature">
-                                <i class="fas fa-database"></i>
-                                <span>Full-Stack + Database</span>
-                            </div>
-                            <div class="feature">
-                                <i class="fas fa-cloud"></i>
-                                <span>Multi-Region AWS</span>
-                            </div>
+                    <div class="hero-stats-row">
+                        <div class="hero-stat">
+                            <i class="fas fa-code"></i>
+                            <strong>13+</strong>
+                            <span>Hours Built</span>
                         </div>
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">React</span>
-                            <span class="tag">TypeScript</span>
-                            <span class="tag">FastAPI</span>
-                            <span class="tag">AWS</span>
-                            <span class="tag">boto3</span>
-                            <span class="tag">scikit-learn</span>
-                            <span class="tag">SQLAlchemy</span>
+                        <div class="hero-stat">
+                            <i class="fas fa-cogs"></i>
+                            <strong>4</strong>
+                            <span>Services</span>
                         </div>
-                        <div class="project-stats">
-                            <div class="stat">
-                                <i class="fas fa-code"></i>
-                                <strong>13+</strong>
-                                <span>Hours Built</span>
-                            </div>
-                            <div class="stat">
-                                <i class="fas fa-cogs"></i>
-                                <strong>4</strong>
-                                <span>Services</span>
-                            </div>
-                            <div class="stat">
-                                <i class="fas fa-server"></i>
-                                <strong>7</strong>
-                                <span>API Endpoints</span>
-                            </div>
-                            <div class="stat">
-                                <i class="fas fa-chart-line"></i>
-                                <strong>100%</strong>
-                                <span>Real AWS Data</span>
-                            </div>
+                        <div class="hero-stat">
+                            <i class="fas fa-server"></i>
+                            <strong>7</strong>
+                            <span>API Endpoints</span>
                         </div>
-                        <div class="project-links">
-                            <a href="https://github.com/Beer146/cloudsense-platform" target="_blank" class="project-link primary">
-                                <i class="fab fa-github"></i> View Code
-                            </a>
-                            <a href="https://github.com/Beer146/cloudsense-platform#readme" target="_blank" class="project-link secondary">
-                                <i class="fas fa-book"></i> Documentation
-                            </a>
+                        <div class="hero-stat">
+                            <i class="fas fa-layer-group"></i>
+                            <strong>Full-Stack</strong>
+                            <span>Architecture</span>
                         </div>
                     </div>
 
-                    <!-- Service 1: Zombie Resource Hunter -->
-                    <div class="project-card">
-                        <div class="project-icon">💀</div>
-                        <h3>Zombie Resource Hunter</h3>
-                        <p class="project-description">
-                            Detects idle and unused AWS resources (stopped EC2 instances, unattached EBS volumes, idle RDS databases) 
-                            and calculates monthly cost waste. <strong>Enhanced with ML:</strong> Random Forest classifier predicts which 
-                            <em>running</em> resources are at risk of becoming zombies before they waste money. Features heuristic scoring 
-                            based on resource age, tagging completeness, instance size, and regional patterns.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">boto3</span>
-                            <span class="tag">scikit-learn</span>
-                            <span class="tag">Feature Engineering</span>
-                        </div>
-                        <div class="project-stats">
-                            <div class="stat">
-                                <i class="fas fa-brain"></i>
-                                <span>ML Predictions</span>
-                            </div>
-                            <div class="stat">
-                                <i class="fas fa-dollar-sign"></i>
-                                <span>Cost Tracking</span>
-                            </div>
-                        </div>
-                        <div class="enhancement-badge">
-                            <i class="fas fa-star"></i> Next: Train supervised model with 30+ days of data
-                        </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">AWS boto3</span>
+                        <span class="tech-tag">scikit-learn</span>
+                        <span class="tech-tag">SQLAlchemy</span>
+                        <span class="tech-tag">CloudWatch</span>
                     </div>
 
-                    <!-- Service 2: Right-Sizing Engine -->
-                    <div class="project-card">
-                        <div class="project-icon">📏</div>
-                        <h3>Right-Sizing Recommendation Engine</h3>
-                        <p class="project-description">
-                            Analyzes 14 days of CloudWatch CPU/memory metrics to recommend optimal instance types and calculate 
-                            potential monthly savings. Identifies over-provisioned resources and suggests downsize or family-switch 
-                            opportunities. <strong>Enhancing with ML:</strong> LSTM time series forecasting for workload prediction, 
-                            pattern recognition for bursty vs steady workloads, and confidence scoring for recommendations.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">CloudWatch</span>
-                            <span class="tag">Pandas</span>
-                            <span class="tag">Time Series</span>
-                        </div>
-                        <div class="project-stats">
-                            <div class="stat">
-                                <i class="fas fa-chart-line"></i>
-                                <span>14-Day Analysis</span>
-                            </div>
-                            <div class="stat">
-                                <i class="fas fa-piggy-bank"></i>
-                                <span>Cost Savings</span>
-                            </div>
-                        </div>
-                        <div class="enhancement-badge">
-                            <i class="fas fa-star"></i> Next: LSTM models for workload forecasting
-                        </div>
+                    <div class="hero-links">
+                        <a href="https://github.com/Beer146/cloudsense-platform" target="_blank" class="hero-link primary">
+                            <i class="fab fa-github"></i> View Source Code
+                        </a>
+                        <a href="https://github.com/Beer146/cloudsense-platform#readme" target="_blank" class="hero-link secondary">
+                            <i class="fas fa-book"></i> Read Documentation
+                        </a>
                     </div>
-
-                    <!-- Service 3: Compliance Validator -->
-                    <div class="project-card">
-                        <div class="project-icon">🔒</div>
-                        <h3>Compliance-as-Code Validator</h3>
-                        <p class="project-description">
-                            Scans AWS infrastructure for security violations (open ports, unencrypted storage, missing tags) with 
-                            severity classification (Critical/High/Medium/Low). Features resolution tracking with timestamps and notes, 
-                            automated remediation guidance, and detailed violation reports. <strong>Enhancing with ML:</strong> Isolation 
-                            Forest for anomaly detection, baseline learning for "normal" configurations, and context-aware security analysis.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">boto3</span>
-                            <span class="tag">Security</span>
-                            <span class="tag">YAML Config</span>
-                        </div>
-                        <div class="project-stats">
-                            <div class="stat">
-                                <i class="fas fa-shield-alt"></i>
-                                <span>Security Scanning</span>
-                            </div>
-                            <div class="stat">
-                                <i class="fas fa-check-circle"></i>
-                                <span>Resolution Tracking</span>
-                            </div>
-                        </div>
-                        <div class="enhancement-badge">
-                            <i class="fas fa-star"></i> Next: Unsupervised anomaly detection
-                        </div>
-                    </div>
-
-                    <!-- Service 4: Post-Mortem Generator -->
-                    <div class="project-card">
-                        <div class="project-icon">📋</div>
-                        <h3>Post-Mortem Incident Analyzer</h3>
-                        <p class="project-description">
-                            Analyzes CloudWatch Logs to extract errors and warnings, groups similar issues using regex pattern matching, 
-                            builds incident timelines, and generates automated recommendations. Searches across log groups with keyword 
-                            detection and provides actionable insights for remediation. <strong>Enhancing with AI:</strong> LLM-powered 
-                            root cause analysis using Claude API, semantic log clustering, cross-service error correlation, and intelligent 
-                            executive summaries.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">CloudWatch Logs</span>
-                            <span class="tag">Regex</span>
-                            <span class="tag">Pattern Matching</span>
-                        </div>
-                        <div class="project-stats">
-                            <div class="stat">
-                                <i class="fas fa-search"></i>
-                                <span>Log Analysis</span>
-                            </div>
-                            <div class="stat">
-                                <i class="fas fa-clock"></i>
-                                <span>24hr Lookback</span>
-                            </div>
-                        </div>
-                        <div class="enhancement-badge">
-                            <i class="fas fa-star"></i> Next: Claude API for intelligent analysis
-                        </div>
-                    </div>
-
-                    <!-- Platform Features Card -->
-                    <div class="project-card platform-features">
-                        <div class="project-icon">⚡</div>
-                        <h3>Platform Architecture</h3>
-                        <div class="architecture-list">
-                            <div class="arch-item">
-                                <i class="fas fa-server"></i>
-                                <div>
-                                    <strong>Backend:</strong> FastAPI with 7 REST endpoints, SQLAlchemy ORM, SQLite database 
-                                    (ready for PostgreSQL migration)
-                                </div>
-                            </div>
-                            <div class="arch-item">
-                                <i class="fas fa-desktop"></i>
-                                <div>
-                                    <strong>Frontend:</strong> React 18 + TypeScript, Recharts for data visualization, 
-                                    responsive design with purple gradient theme
-                                </div>
-                            </div>
-                            <div class="arch-item">
-                                <i class="fas fa-database"></i>
-                                <div>
-                                    <strong>Database:</strong> Scan history tracking, resolution tracking, 5 SQLAlchemy models, 
-                                    executive insights with health scores
-                                </div>
-                            </div>
-                            <div class="arch-item">
-                                <i class="fas fa-cloud"></i>
-                                <div>
-                                    <strong>AWS Integration:</strong> boto3 SDK, multi-region scanning (us-east-1, us-west-2), 
-                                    CloudWatch metrics & logs, EC2/EBS/RDS/ELB/S3
-                                </div>
-                            </div>
-                            <div class="arch-item">
-                                <i class="fas fa-brain"></i>
-                                <div>
-                                    <strong>ML Stack:</strong> scikit-learn (Random Forest), feature engineering (7+ features), 
-                                    ready for XGBoost, LSTM, Isolation Forest
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
-        </section>
+
+            <!-- Integrated Services Header -->
+            <div class="services-header">
+                <h3>🔧 Integrated Services</h3>
+                <p>Four intelligent AWS optimization tools consolidated into one unified platform</p>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="services-grid">
+                
+                <!-- Service 1: Zombie Resource Hunter -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">💀</div>
+                        <div>
+                            <h4>Zombie Resource Hunter</h4>
+                            <span class="service-subtitle">ML-Powered Waste Detection</span>
+                        </div>
+                    </div>
+                    <p class="service-description">
+                        Detects idle AWS resources (stopped EC2, unattached EBS, idle RDS) and calculates monthly waste. 
+                        <strong>ML Enhancement:</strong> Random Forest classifier with 7+ features predicts which <em>running</em> 
+                        resources will become zombies, using resource age, tagging, instance size, and regional patterns.
+                    </p>
+                    <div class="service-tech">
+                        <span class="mini-tag">boto3</span>
+                        <span class="mini-tag">scikit-learn</span>
+                        <span class="mini-tag">Feature Engineering</span>
+                    </div>
+                    <div class="enhancement">
+                        <i class="fas fa-rocket"></i>
+                        <span><strong>Next:</strong> Train supervised model with historical data</span>
+                    </div>
+                </div>
+
+                <!-- Service 2: Right-Sizing Engine -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">📏</div>
+                        <div>
+                            <h4>Right-Sizing Engine</h4>
+                            <span class="service-subtitle">CloudWatch Metrics Analysis</span>
+                        </div>
+                    </div>
+                    <p class="service-description">
+                        Analyzes 14 days of CloudWatch CPU/memory data to recommend optimal instance types and calculate savings. 
+                        Identifies over-provisioning and suggests downsize/family-switch opportunities. 
+                        <strong>ML Enhancement:</strong> LSTM time series forecasting for workload prediction and confidence scoring.
+                    </p>
+                    <div class="service-tech">
+                        <span class="mini-tag">CloudWatch</span>
+                        <span class="mini-tag">Pandas</span>
+                        <span class="mini-tag">Time Series</span>
+                    </div>
+                    <div class="enhancement">
+                        <i class="fas fa-rocket"></i>
+                        <span><strong>Next:</strong> LSTM models for workload forecasting</span>
+                    </div>
+                </div>
+
+                <!-- Service 3: Compliance Validator -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">🔒</div>
+                        <div>
+                            <h4>Compliance Validator</h4>
+                            <span class="service-subtitle">Security & Config Scanning</span>
+                        </div>
+                    </div>
+                    <p class="service-description">
+                        Scans infrastructure for security violations (open ports, unencrypted storage, missing tags) with 
+                        severity classification. Features resolution tracking and remediation guidance. 
+                        <strong>ML Enhancement:</strong> Isolation Forest for anomaly detection and baseline configuration learning.
+                    </p>
+                    <div class="service-tech">
+                        <span class="mini-tag">Security</span>
+                        <span class="mini-tag">YAML Config</span>
+                        <span class="mini-tag">boto3</span>
+                    </div>
+                    <div class="enhancement">
+                        <i class="fas fa-rocket"></i>
+                        <span><strong>Next:</strong> Unsupervised anomaly detection</span>
+                    </div>
+                </div>
+
+                <!-- Service 4: Post-Mortem Generator -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">📋</div>
+                        <div>
+                            <h4>Post-Mortem Analyzer</h4>
+                            <span class="service-subtitle">Automated Incident Analysis</span>
+                        </div>
+                    </div>
+                    <p class="service-description">
+                        Analyzes CloudWatch Logs to extract errors/warnings, groups similar issues, builds timelines, and generates 
+                        recommendations. Searches across log groups with keyword detection. 
+                        <strong>AI Enhancement:</strong> Claude API for root cause analysis, semantic clustering, and executive summaries.
+                    </p>
+                    <div class="service-tech">
+                        <span class="mini-tag">CloudWatch Logs</span>
+                        <span class="mini-tag">Regex</span>
+                        <span class="mini-tag">Pattern Matching</span>
+                    </div>
+                    <div class="enhancement">
+                        <i class="fas fa-rocket"></i>
+                        <span><strong>Next:</strong> LLM-powered intelligent analysis</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Architecture Section -->
+            <div class="architecture-section">
+                <h3>🏗️ Platform Architecture</h3>
+                <div class="architecture-grid">
+                    <div class="arch-card">
+                        <i class="fas fa-server"></i>
+                        <h5>Backend</h5>
+                        <p>FastAPI with 7 REST endpoints, SQLAlchemy ORM, SQLite database (PostgreSQL-ready)</p>
+                    </div>
+                    <div class="arch-card">
+                        <i class="fas fa-desktop"></i>
+                        <h5>Frontend</h5>
+                        <p>React 18 + TypeScript, Recharts visualization, responsive design with purple gradient theme</p>
+                    </div>
+                    <div class="arch-card">
+                        <i class="fas fa-database"></i>
+                        <h5>Database</h5>
+                        <p>Scan history tracking, resolution tracking, 5 SQLAlchemy models, executive insights & health scores</p>
+                    </div>
+                    <div class="arch-card">
+                        <i class="fas fa-cloud"></i>
+                        <h5>AWS Integration</h5>
+                        <p>boto3 SDK, multi-region scanning, CloudWatch metrics/logs, EC2/EBS/RDS/ELB/S3</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
    <!-- Certificates Section -->
     <section id="certificates" class="certificates">
