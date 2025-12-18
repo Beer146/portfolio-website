@@ -17,9 +17,6 @@
     --text-light: #64748b;
     --success-color: #10b981;
     --warning-color: #f59e0b;
-    --purple-primary: #646cff;
-    --purple-secondary: #535bf2;
-    --purple-accent: #a78bfa;
 }
 
 body {
@@ -212,306 +209,197 @@ section {
     margin-bottom: 1.5rem;
 }
 
-/* Projects Section - CloudSense Focused */
-
-/* Hero Project Section */
-.hero-project {
-    background: linear-gradient(135deg, rgba(100, 108, 255, 0.15) 0%, rgba(83, 91, 242, 0.08) 100%);
-    border: 2px solid var(--purple-primary);
-    border-radius: 12px;
-    padding: 2.5rem;
-    margin-bottom: 3rem;
+/* CloudSense Platform - Centered Hero Section (No Box) */
+.project-hero {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 4rem auto;
+    padding: 0 20px;
 }
 
-.hero-header {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    margin-bottom: 1.5rem;
-    flex-wrap: wrap;
+.project-hero-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
 }
 
-.hero-icon {
+.project-hero-title {
     font-size: 3rem;
-    flex-shrink: 0;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    color: var(--dark-bg);
 }
 
-.hero-title-section {
-    flex: 1;
-    min-width: 250px;
-}
-
-.hero-title-section h2 {
-    font-size: 2.5rem;
-    margin: 0;
-    background: linear-gradient(135deg, var(--purple-primary) 0%, var(--purple-secondary) 50%, var(--purple-accent) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-.hero-subtitle {
-    font-size: 1.1rem;
+.project-hero-subtitle {
+    font-size: 1.3rem;
     color: var(--text-light);
-    margin: 0.5rem 0 0 0;
+    margin-bottom: 1.5rem;
 }
 
-.hero-badge {
-    background: var(--purple-primary);
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    font-weight: 600;
-    white-space: nowrap;
-}
-
-.hero-description {
-    font-size: 1.05rem;
-    line-height: 1.7;
+.project-hero-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
     color: var(--text-light);
     margin-bottom: 2rem;
 }
 
-.hero-stats-row {
+.project-hero-tech {
     display: flex;
-    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
     margin: 2rem 0;
-    padding: 1.5rem;
-    background: rgba(0, 0, 0, 0.05);
-    border-radius: 8px;
-    flex-wrap: wrap;
-    justify-content: space-around;
 }
 
-.hero-stat {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.hero-stat i {
-    color: var(--purple-primary);
-    font-size: 1.5rem;
-}
-
-.hero-stat strong {
-    font-size: 1.8rem;
-    color: var(--purple-primary);
-    font-weight: 700;
-}
-
-.hero-stat span {
+.hero-tech-tag {
+    background: var(--light-bg);
+    color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
     font-size: 0.9rem;
-    color: var(--text-light);
+    font-weight: 600;
+    border: 1px solid #e2e8f0;
 }
 
-.tech-stack {
+.project-hero-links {
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin: 1.5rem 0;
-}
-
-.tech-tag {
-    background: rgba(100, 108, 255, 0.1);
-    border: 1px solid var(--purple-primary);
-    color: var(--purple-primary);
-    padding: 0.4rem 0.8rem;
-    border-radius: 4px;
-    font-size: 0.9rem;
-    font-weight: 500;
-}
-
-.hero-links {
-    display: flex;
+    justify-content: center;
     gap: 1rem;
-    margin-top: 2rem;
     flex-wrap: wrap;
 }
 
-.hero-link {
-    padding: 0.8rem 1.5rem;
+.hero-btn {
+    padding: 0.75rem 1.5rem;
     border-radius: 8px;
     text-decoration: none;
     font-weight: 600;
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    transition: all 0.3s ease;
+    transition: all 0.3s;
 }
 
-.hero-link.primary {
-    background: var(--purple-primary);
+.hero-btn.primary {
+    background: var(--primary-color);
     color: white;
 }
 
-.hero-link.primary:hover {
-    background: var(--purple-secondary);
+.hero-btn.primary:hover {
+    background: var(--secondary-color);
     transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
 }
 
-.hero-link.secondary {
+.hero-btn.secondary {
     background: transparent;
-    border: 2px solid var(--purple-primary);
-    color: var(--purple-primary);
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
 }
 
-.hero-link.secondary:hover {
-    background: rgba(100, 108, 255, 0.1);
+.hero-btn.secondary:hover {
+    background: var(--light-bg);
 }
 
-/* Services Header */
-.services-header {
-    text-align: center;
-    margin: 3rem 0 2rem 0;
+/* Integrated Services Section */
+.services-section {
+    margin-top: 4rem;
 }
 
-.services-header h3 {
+.services-title {
     font-size: 2rem;
-    margin-bottom: 0.5rem;
+    text-align: center;
     color: var(--dark-bg);
+    margin-bottom: 0.5rem;
 }
 
-.services-header p {
+.services-subtitle {
     font-size: 1.1rem;
+    text-align: center;
     color: var(--text-light);
-}
-
-/* Services Grid */
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
     margin-bottom: 3rem;
 }
 
-.service-card {
+/* Services 2x2 Grid */
+.services-grid-2x2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-box {
     background: white;
     border: 1px solid #e2e8f0;
-    border-radius: 8px;
-    padding: 1.5rem;
-    transition: all 0.3s ease;
+    border-radius: 12px;
+    padding: 2rem;
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+    text-align: center;
 }
 
-.service-card:hover {
-    border-color: var(--purple-primary);
-    transform: translateY(-4px);
+.service-box:hover {
+    transform: translateY(-5px);
     box-shadow: 0 10px 40px rgba(0,0,0,0.15);
-}
-
-.service-header {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-    margin-bottom: 1rem;
+    border-color: var(--primary-color);
 }
 
 .service-icon {
-    font-size: 2rem;
-    flex-shrink: 0;
+    font-size: 3rem;
+    margin-bottom: 1rem;
 }
 
-.service-header h4 {
-    font-size: 1.3rem;
-    margin: 0 0 0.25rem 0;
+.service-box h3 {
+    font-size: 1.5rem;
     color: var(--dark-bg);
+    margin-bottom: 0.5rem;
 }
 
-.service-subtitle {
-    font-size: 0.85rem;
-    color: var(--purple-primary);
-    font-weight: 500;
+.service-tag {
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    display: block;
 }
 
 .service-description {
     color: var(--text-light);
-    line-height: 1.6;
-    margin: 1rem 0;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    text-align: left;
 }
 
-.service-tech {
+.service-tech-tags {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 0.5rem;
-    margin: 1rem 0;
+    margin-bottom: 1.5rem;
 }
 
-.mini-tag {
-    background: rgba(100, 108, 255, 0.1);
+.tech-mini {
+    background: var(--light-bg);
     color: var(--text-light);
-    padding: 0.25rem 0.6rem;
-    border-radius: 4px;
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
     font-size: 0.8rem;
 }
 
-.enhancement {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-top: 1rem;
-    padding: 0.75rem;
-    background: rgba(255, 193, 7, 0.1);
-    border-left: 3px solid var(--warning-color);
-    border-radius: 4px;
-    font-size: 0.9rem;
+.service-enhancement {
+    background: rgba(245, 158, 11, 0.1);
     color: var(--warning-color);
-}
-
-.enhancement i {
-    font-size: 1rem;
-}
-
-/* Architecture Section */
-.architecture-section {
-    background: rgba(100, 108, 255, 0.05);
-    border-radius: 12px;
-    padding: 2rem;
-    margin-top: 3rem;
-}
-
-.architecture-section h3 {
-    text-align: center;
-    font-size: 1.8rem;
-    margin-bottom: 2rem;
-    color: var(--dark-bg);
-}
-
-.architecture-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-}
-
-.arch-card {
-    background: white;
-    padding: 1.5rem;
+    padding: 0.75rem;
     border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-}
-
-.arch-card i {
-    font-size: 2.5rem;
-    color: var(--purple-primary);
-    margin-bottom: 1rem;
-}
-
-.arch-card h5 {
-    font-size: 1.2rem;
-    margin: 0.5rem 0;
-    color: var(--dark-bg);
-}
-
-.arch-card p {
-    color: var(--text-light);
     font-size: 0.9rem;
-    line-height: 1.5;
+    text-align: left;
+    border-left: 3px solid var(--warning-color);
 }
 
-/* Old Project Cards (keep for other projects) */
+.service-enhancement i {
+    margin-right: 0.5rem;
+}
+
+/* Old Projects Grid (for other projects) */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -840,25 +728,15 @@ section {
         justify-content: center;
     }
 
-    /* CloudSense Responsive */
-    .hero-header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    .hero-title-section h2 {
+    .project-hero-title {
         font-size: 2rem;
     }
     
-    .hero-stats-row {
-        gap: 1rem;
+    .project-hero-subtitle {
+        font-size: 1.1rem;
     }
     
-    .services-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .architecture-grid {
+    .services-grid-2x2 {
         grid-template-columns: 1fr;
     }
 
